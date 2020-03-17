@@ -7,33 +7,33 @@ import java.util.*;
 
 public class JavaList {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt(); // length of list
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt(); // length of list
 
-        List<Integer> l = new ArrayList<Integer>();
+		List<Integer> l = new ArrayList<Integer>();
 
-        for (int i = 0; i < n; i++) {
-            l.add(i, scan.nextInt()); // add numbers to list
-        }
-        
-        int o = scan.nextInt(); // number of queries
-        
+		for (int i = 0; i < n; i++) {
+			l.add(i, scan.nextInt()); // add numbers to list
+		}
+		
+		int o = scan.nextInt(); // number of queries
+		
 		// perform queries        
 		for (int j = 0; j < o; j++) {
-            String query = scan.next();
-            if (query.equals("Insert")) {
-                l.add(scan.nextInt(), scan.nextInt());
-            } else {
-                l.remove(scan.nextInt());
-            }
-        }
-        scan.close();
+			String query = scan.next();
+			if (query.equals("Insert")) {
+				l.add(scan.nextInt(), scan.nextInt());
+			} else {
+				l.remove(scan.nextInt());
+			}
+		}
+		scan.close();
 
-        for (Integer num : l) {
-            System.out.print(num + " ");
-        }
-    }
+		for (Integer num : l) {
+			System.out.print(num + " ");
+		}
+	}
 }
 

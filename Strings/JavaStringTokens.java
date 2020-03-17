@@ -8,32 +8,32 @@ import java.util.*;
 
 public class JavaStringTokens {
 
-    public static void main(String[] args) {
-        
+	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner(System.in);
-        String s = scan.nextLine();
+		String s = scan.nextLine();
 
-        String s_trim = s.trim(); // remove leading and trailing spaces
-        String[] arrOfStrings = s_trim.split("[ !,?._'@]+");
-        
+		String s_trim = s.trim(); // remove leading and trailing spaces
+		String[] arrOfStrings = s_trim.split("[ !,?._'@]+");
+		
 		// print 0 if string is empty
-        if (s_trim.equals("")) { 
-            System.out.println(0);
-        }
+		if (s_trim.equals("")) { 
+			System.out.println(0);
+		}
 		// don't process very large strings      
 		else if (s_trim.length() > 400000) {
-            return;
-        }
+			return;
+		}
 		else {
 			// number of tokens            
 			System.out.println(arrOfStrings.length);
 
 			// print each token
-		    for (String str : arrOfStrings)
-		        System.out.println(str);
-        }
-        
-        scan.close();
-    }
+			for (String str : arrOfStrings)
+				System.out.println(str);
+		}
+		
+		scan.close();
+	}
 }
 

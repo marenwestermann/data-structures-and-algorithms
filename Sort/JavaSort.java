@@ -37,17 +37,17 @@ class Student{
 //Complete the code
 class CompareStudents implements Comparator<Student> {
 
-    public int compare(Student a, Student b) {
-        if (a.getCgpa() < b.getCgpa()) return +1;
-        if (a.getCgpa() > b.getCgpa()) return -1;
-        else {
-            if (a.getFname().equals(b.getFname())) {
-                return a.getId() - b.getId();
-            } else {
-                return a.getFname().compareTo(b.getFname()); 
-            }
-        }    
-    }
+	public int compare(Student a, Student b) {
+		if (a.getCgpa() < b.getCgpa()) return +1;
+		if (a.getCgpa() > b.getCgpa()) return -1;
+		else {
+			if (a.getFname().equals(b.getFname())) {
+				return a.getId() - b.getId();
+			} else {
+				return a.getFname().compareTo(b.getFname()); 
+			}
+		}    
+	}
 }
 
 public class JavaSort {
@@ -67,10 +67,10 @@ public class JavaSort {
 			
 			testCases--;
 		}
-        CompareStudents cs = new CompareStudents();
-        Collections.sort(studentList, cs);
-      
-      	for(Student st: studentList){
+		CompareStudents cs = new CompareStudents();
+		Collections.sort(studentList, cs);
+	  
+	  	for(Student st: studentList){
 			System.out.println(st.getFname());
 		}
 	}

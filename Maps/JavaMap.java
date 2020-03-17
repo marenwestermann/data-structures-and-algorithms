@@ -16,24 +16,24 @@ class JavaMap{
 		Map<String,Integer> hm = new HashMap<String, Integer>();
 
 		// fill phone book
-        for(int i=0;i<n;i++)
+		for(int i=0;i<n;i++)
 		{
 			String name=in.nextLine();
 			int phone=in.nextInt();
 			in.nextLine();
-            hm.put(name, phone);
+			hm.put(name, phone);
 		}
 		
 		// retreive phone number
 		while(in.hasNext())
 		{
 			String s=in.nextLine();
-            if (hm.containsKey(s)) {
-                System.out.println(s + "=" + hm.get(s));
-            } else {
-                System.out.println("Not found");
-            }
+			if (hm.containsKey(s)) {
+				System.out.println(s + "=" + hm.get(s));
+			} else {
+				System.out.println("Not found");
+			}
 		}
-        in.close();
+		in.close();
 	}
 }

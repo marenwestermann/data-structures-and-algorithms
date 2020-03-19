@@ -100,17 +100,17 @@ public class ReverseALinkedList {
 	public static void main(String[] args) throws IOException {
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-		int tests = scanner.nextInt();
+		int tests = scanner.nextInt(); // number of test cases (linked lists)
 		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 		for (int testsItr = 0; testsItr < tests; testsItr++) {
 			SinglyLinkedList llist = new SinglyLinkedList();
 
-			int llistCount = scanner.nextInt();
+			int llistCount = scanner.nextInt(); // number of elements in linked lists
 			scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 			for (int i = 0; i < llistCount; i++) {
-				int llistItem = scanner.nextInt();
+				int llistItem = scanner.nextInt(); // elements of the linked lists
 				scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 				llist.insertNode(llistItem);

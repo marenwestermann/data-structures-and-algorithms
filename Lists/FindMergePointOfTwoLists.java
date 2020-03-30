@@ -13,7 +13,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class MergeTwoSortedLinkedLists {
+public class FindMergePointOfTwoLists {
 
 	static class SinglyLinkedListNode {
 		public int data;

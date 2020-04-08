@@ -27,8 +27,8 @@ public class NewYearChaos1 {
     // Complete the minimumBribes function below.
     static int minimumBribes(int[] q) {
 
-        // store array entries in hashset; we wan't to use the contains()
-        // function which has linear runtime complexity in a hashset
+        // store array entries in hashset; we want to use the contains()
+        // function which has constant runtime complexity in a hashset
         HashSet<Integer> hs = new HashSet<Integer>();
         for (int i = 0; i < q.length; i++) {
             hs.add(q[i]);

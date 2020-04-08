@@ -12,7 +12,7 @@ that took place to get the queue into its current state!
 
 Comment: 
 This solution didn't meet the expected runtime requirement. I didn't take full
-advantage of the fact that people can move forward by a max of to spots. */
+advantage of the fact that people can move forward by a max of two spots. */
 
 import java.io.*;
 import java.math.*;

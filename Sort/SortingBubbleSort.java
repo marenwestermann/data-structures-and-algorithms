@@ -23,7 +23,7 @@ public class SortingBubbleSort {
         boolean sorted = false;
         // initialise counter for number of swaps
         int count = 0;
-        // keep track of last element for runtime optimisation (after each
+        // keep track of last unsorted element for runtime optimisation (after each
         // walk through the array the last element will be in the correct place)
         int lastUnsorted = a.length -1;
 
@@ -33,7 +33,7 @@ public class SortingBubbleSort {
             // assume the array is sorted; if not, the value will be 
             // set to false and we'll walk through the array again
             sorted = true;
-            // one full walk through the array
+            // walk through the array
             for (int i = 0; i < lastUnsorted; i++) {
                 if (a[i] > a[i+1]) {
                     int temp = a[i];

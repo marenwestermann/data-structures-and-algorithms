@@ -1,13 +1,17 @@
-/* There are a number of students in a school who wait to be served. Two types of events, 
+/* Problem:
+There are a number of students in a school who wait to be served. Two types of events,
 ENTER and SERVED, can take place which are described below.
 ENTER: A student with some priority enters the queue to be served.
 SERVED: The student with the highest priority is served (removed) from the queue.
 
-A unique id is assigned to each student entering the queue. The queue serves the students 
+A unique id is assigned to each student entering the queue. The queue serves the students
 based on the following criteria (priority criteria):
 1. The student having the highest Cumulative Grade Point Average (CGPA) is served first.
 2. Any students having the same CGPA will be served by name in ascending case-sensitive alphabetical order.
-3. Any students having the same CGPA and name will be served in ascending order of the id. */
+3. Any students having the same CGPA and name will be served in ascending order of the id.
+
+Output: the names of the students yet to be served in the priority order. If there are no such students,
+then the code prints EMPTY. */
 
 import java.util.ArrayList;
 import java.util.List;

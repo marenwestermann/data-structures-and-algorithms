@@ -55,7 +55,7 @@ public class JavaStack {
 				else {
 					if (c == ')' && (!stack.isEmpty()) && stack.peek() == '(') {
 						stack.pop(); }
-					else if (c == '}' && (!stack.isEmpty()) && stack.peek() == '{' {
+					else if (c == '}' && (!stack.isEmpty()) && stack.peek() == '{') {
 						stack.pop(); }
 					else if (c == ']' && (!stack.isEmpty()) && stack.peek() == '[') {
 						stack.pop(); }

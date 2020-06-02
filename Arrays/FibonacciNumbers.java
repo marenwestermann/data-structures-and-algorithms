@@ -6,7 +6,7 @@ Constraints:
 
 Note:
 this is my iterative implementation. A recursive
-implmentation can be found in the "Recusion" folder. */
+implementation can be found in the "Recursion" folder. */
 
 import java.util.*;
 

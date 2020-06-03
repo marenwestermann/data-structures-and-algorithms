@@ -15,14 +15,14 @@ public class FibonacciNumbers {
     public static int fibonacci(int n) {
 
         // initialise array
-        int[] array = new int[31];
+        int[] array = new int[n+1];
 
         // fill first two positions (starting condition)
         array[0] = 0;
         array[1] = 1;
 
         // iteratively fill remaining positions
-        for (int i = 2; i < array.length; i++) {
+        for (int i = 2; i <= n; i++) {
             array[i] = array[i-1] + array[i-2];
         }
 

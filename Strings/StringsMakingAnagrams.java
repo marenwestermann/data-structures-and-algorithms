@@ -1,10 +1,10 @@
-/* Problem: 
-Given two strings, a and b, that may or may not be of the same length, determine 
-the minimum number of character deletions required to make a and b anagrams. Any 
+/* Problem:
+Given two strings, a and b, that may or may not be of the same length, determine
+the minimum number of character deletions required to make a and b anagrams. Any
 characters can be deleted from either of the strings.
-We consider two strings to be anagrams of each other if the first string's letters 
-can be rearranged to form the second string.In other words, both strings must 
-contain the same exact letters in the same exact frequency. */ 
+We consider two strings to be anagrams of each other if the first string's letters
+can be rearranged to form the second string. In other words, both strings must
+contain the same exact letters in the same exact frequency. */
 
 import java.io.*;
 import java.math.*;
@@ -20,7 +20,8 @@ public class StringsMakingAnagrams {
     private static HashMap<Character, Integer> charFrequencies(String s) {
 
         HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
-        
+
+        // iterate over string
         for (int i = 0; i < s.length(); i++) {
             if (hm.containsKey(s.charAt(i))) {
                 hm.put(s.charAt(i), hm.get(s.charAt(i)) +1);
@@ -32,8 +33,11 @@ public class StringsMakingAnagrams {
 
     // helper function for calculating differences in character frequencies
     private static int getDifferences(HashMap<Character, Integer> hmX, HashMap<Character, Integer> hmY) {
-        
+
+        // set up counter
         int count = 0;
+
+        // iterate over hashmap hmX and compare to hashmap hmY
         for (Map.Entry<Character, Integer> entry : hmX.entrySet()) {
             if (!hmY.containsKey(entry.getKey())) {
                 count += entry.getValue();
@@ -43,7 +47,7 @@ public class StringsMakingAnagrams {
         }
         return count;
     }
-    
+
     // function for calculating the number of deletions
     static int makeAnagram(String a, String b) {
 
